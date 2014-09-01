@@ -1,4 +1,5 @@
 ucms
 ====
 
-a sexy cms based on thinkphp
+A master and a PHP beginner's work
+Just a sexy CMS based on thinkphp .
