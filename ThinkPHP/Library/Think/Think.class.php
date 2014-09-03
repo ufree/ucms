@@ -28,7 +28,7 @@ class Think {
      */
     static public function start() {
       // 注册AUTOLOAD方法
-      spl_autoload_register('Think\Think::autoload');      
+      spl_autoload_register('Think\Think::autoload');
       // 设定错误和异常处理
       register_shutdown_function('Think\Think::fatalError');
       set_error_handler('Think\Think::appError');
@@ -321,7 +321,7 @@ class Think {
      * @param string $label 标签
      * @param string $level 日志级别(或者页面Trace的选项卡)
      * @param boolean $record 是否记录日志
-     * @return void
+     * @return void|array
      */
     static public function trace($value='[think]',$label='',$level='DEBUG',$record=false) {
         static $_trace =  array();
